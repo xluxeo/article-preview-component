@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Article preview component</title>
+  <title>Artikel-Vorschau Komponente</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,58 +14,68 @@
   <main>
     <article class="c-card">
       <header class="c-card__header">
-        <img src="./images/drawers.jpg" alt="Drawers" class="c-card__image">
+        <img src="./images/drawers.jpg" alt="Grüne Kommode mit Deko-Elementen" class="c-card__image">
       </header>
+      
+      <div class="c-card__body">
       <div class="c-card__content">
-        <h1 class="c-card__title">Shift the overall look and feel by adding these wonderful touches to furniture in your
-          home</h1>
-        <p class="c-card__text">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare
-          and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+        <h2 class="c-card__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+        <p class="c-card__text">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
       </div>
+      
       <footer class="c-card__footer" id="footer">
         <div class="c-card__author-container">
           <div class="c-card__author">
-            <img src="./images/avatar-michelle.jpg" alt="Michelle Appleton" class="c-card__author-image">
+            <img src="./images/avatar-michelle.jpg" alt="Portrait von Michelle Appleton" class="c-card__author-image">
             <div class="c-card__author-info">
               <span class="c-card__author-name">Michelle Appleton</span>
               <span class="c-card__author-date">28 Jun 2020</span>
             </div>
           </div>
-          <button class="c-card__share-button" onclick="toggleShare()" aria-label="Share this article">
-              <img class="c-card__share-arrow" src="./images/icon-share.svg" alt="">
-            </button>
+          
+          
+          <button class="c-card__share-button js-share-trigger" 
+                  aria-label="Social-Media Share-Optionen öffnen" 
+                  aria-expanded="false" 
+                  aria-controls="share-container">
+            <img class="c-card__share-arrow" src="./images/icon-share.svg" alt="">
+          </button>
         </div>
-        <div class="c-card__share-container">
+        
+       
+        <div class="c-card__share-container" id="share-container">
           <span class="c-card__share-text">Share</span>
           <ul class="c-card__share-list">
             <li class="c-card__share-item">
-              <a href="#" class="c-card__share-link" aria-label="Share on Facebook">
-                <img class="c-card__share-icon" src="./images/icon-facebook.svg" alt="Facebook">
+              <a href="#" class="c-card__share-link" aria-label="Auf Facebook teilen">
+                <img class="c-card__share-icon" src="./images/icon-facebook.svg" alt="">
               </a>
             </li>
             <li class="c-card__share-item">
-              <a href="#" class="c-card__share-link" aria-label="Share on Twitter">
-                <img class="c-card__share-icon" src="./images/icon-twitter.svg" alt="Twitter">
+              <a href="#" class="c-card__share-link" aria-label="Auf Twitter teilen">
+                <img class="c-card__share-icon" src="./images/icon-twitter.svg" alt="">
               </a>
             </li>
             <li class="c-card__share-item">
-              <a href="#" class="c-card__share-link" aria-label="Share on Pinterest">
-                <img class="c-card__share-icon" src="./images/icon-pinterest.svg" alt="Pinterest">
+              <a href="#" class="c-card__share-link" aria-label="Auf Pinterest teilen">
+                <img class="c-card__share-icon" src="./images/icon-pinterest.svg" alt="">
               </a>
             </li>
           </ul>
-          <button class="c-card__share-close" onclick="toggleShare()" aria-label="Close share options">
+          
+          <button class="c-card__share-close js-share-trigger" aria-label="Share-Optionen schließen">
             <img class="c-card__share-arrow" src="./images/icon-share.svg" alt="">
           </button>
         </div>
       </footer>
+      </div>
 
     </article>
   </main>
 
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/profile/xluxeo">xluxeo</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noopener" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/xluxeo" rel="noopener" target="_blank">xluxeo</a>.
   </footer>
 
   <script src="script.js"></script>
