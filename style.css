@@ -27,13 +27,6 @@ main {
     min-block-size: 100vh;
 }
 
-.attribution {
-    position: fixed;
-    inset-block-end: 0.5rem;
-    inset-inline-start: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-}
 
 .sr-only {
   position: absolute;
