@@ -1,4 +1,4 @@
-let shareButtons = document.querySelectorAll('.js-share-trigger');
+const shareButtons = document.querySelectorAll('.js-share-trigger');
 shareButtons.forEach(button => {
     button.addEventListener('click', toggleShare);
 });

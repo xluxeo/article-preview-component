@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <h1 class="sr-only">Frontend Mentor - Article preview component</h1>
 
   <main>
     <article class="c-card">
@@ -32,17 +33,15 @@
               <span class="c-card__author-date">28 Jun 2020</span>
             </div>
           </div>
-          
-          
           <button class="c-card__share-button js-share-trigger" 
                   aria-label="Social-Media Share-Optionen öffnen" 
                   aria-expanded="false" 
-                  aria-controls="share-container">
+                  aria-controls="share-container"
+                  type="button">
             <img class="c-card__share-arrow" src="./images/icon-share.svg" alt="">
           </button>
         </div>
         
-       
         <div class="c-card__share-container" id="share-container">
           <span class="c-card__share-text">Share</span>
           <ul class="c-card__share-list">
@@ -62,8 +61,7 @@
               </a>
             </li>
           </ul>
-          
-          <button class="c-card__share-close js-share-trigger" aria-label="Share-Optionen schließen">
+          <button class="c-card__share-close js-share-trigger" aria-label="Share-Optionen schließen" type="button">
             <img class="c-card__share-arrow" src="./images/icon-share.svg" alt="">
           </button>
         </div>
