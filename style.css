@@ -37,7 +37,7 @@ body {
     flex-direction: column;
     inline-size: 100%;
     max-inline-size: 18.75rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: white;
 }
  
@@ -51,7 +51,7 @@ body {
     display: block;
     inline-size: 100%;
     block-size: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0.625rem 0.625rem 0 0;
     object-fit: cover;
     object-position: center top;
 }
@@ -88,7 +88,7 @@ body {
 
 .c-card__author-image {
     inline-size: 2.5rem;
-    block-size: 40px;
+    block-size: 2.5rem;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -112,7 +112,7 @@ body {
     place-items: center;
     background-color: var(--light-grayish-blue);
     inline-size: 2rem;
-    block-size: 32px;
+    block-size: 2rem;
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -120,7 +120,7 @@ body {
 
 .c-card__share-arrow {
     inline-size: 0.9375rem;
-    block-size: 13px;
+    block-size: 0.8125rem;
 }
 
 .c-card__share-icon {
@@ -144,13 +144,13 @@ body {
     min-block-size: 4rem;
     padding: 0 2rem;
     background-color: var(--very-dark-grayish-blue);
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 0.625rem 0.625rem;
 }
 
 .c-card__share-text {
     color: var(--grayish-blue);
     font-size: 0.75rem;
-    letter-spacing: 4px;
+    letter-spacing: 0.25rem;
     text-transform: uppercase;
 }
 
@@ -164,14 +164,14 @@ body {
 .c-card__share-link {
     display: block;
     inline-size: 1.25rem;
-    block-size: 20px;
+    block-size: 1.25rem;
 }
 
 .c-card__share-close {
     display: grid;
     place-items: center;
     inline-size: 2rem;
-    block-size: 32px;
+    block-size: 2rem;
     margin-inline-start: auto;
     border: none;
     border-radius: 50%;
@@ -199,7 +199,7 @@ body {
 @media (min-width: 64em) {
     .c-card {
         flex-direction: row;
-        block-size: 270px;
+        block-size: 16.875rem;
         max-inline-size:  43.75rem;
     }
 
@@ -211,7 +211,7 @@ body {
 
     .c-card__image {
         block-size: 100%;
-        border-radius: 10px 0 0 10px;
+        border-radius: 0.625rem 0 0 0.625rem;
     }
 
     .c-card__body {
@@ -252,24 +252,24 @@ body {
 
     .c-card__footer.active .c-card__share-container {
         position: absolute;
-        inset-block-end: 92px;
-        inset-inline-end: -65px;
+        inset-block-end: 5.75rem;
+        inset-inline-end: -4.0625rem;
         display: flex;
-        min-block-size: 54px;
+        min-block-size: 3.375rem;
         inline-size: 14.875rem;
         padding: 0 1.5rem;
-        border-radius: 8px;
+        border-radius: 0.5rem;
     }
 
     
     .c-card__share-container::after {
         position: absolute;
-        inset-block-end: -12px;
-        inset-inline-end: 108px;
+        inset-block-end: -0.75rem;
+        inset-inline-end: 6.75rem;
         inline-size: 0;
         block-size: 0;
-        border-inline: 12px solid transparent;
-        border-block-start: 12px solid var(--very-dark-grayish-blue);
+        border-inline: 0.75rem solid transparent;
+        border-block-start: 0.75rem solid var(--very-dark-grayish-blue);
         content: "";
     }
 
