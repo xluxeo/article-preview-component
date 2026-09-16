@@ -232,7 +232,7 @@ main {
     .c-card__content {
         flex: 1;
         gap: 0.875rem;
-        padding: 2rem 2.375rem 0;
+        padding: 2rem;
     }
 
     .c-card__title {
