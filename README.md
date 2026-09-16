@@ -47,5 +47,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.xluxeo.de)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/xluxeo)
+- Website - [xluxeo](https://www.xluxeo.de)
+- Frontend Mentor - [xluxeo](https://www.frontendmentor.io/profile/xluxeo)
