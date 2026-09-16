@@ -149,7 +149,7 @@ body {
 
 .c-card__share-text {
     color: var(--grayish-blue);
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
